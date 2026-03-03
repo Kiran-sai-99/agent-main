@@ -1,0 +1,33 @@
+# GenAI Agentic RAG - Production dependencies
+# Python 3.11+
+
+# Web
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+
+# Config & validation
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# LangChain
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.0.20
+langchain-openai>=0.0.5
+langchain-chroma>=0.0.6
+
+# Vector store
+chromadb>=0.4.22
+
+# Document parsing
+pypdf>=4.0.0
+python-docx>=1.1.0
+
+# Optional: use dedicated Ollama integration (alternative to langchain_community)
+# langchain-ollama>=0.0.1
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+httpx>=0.25.0
